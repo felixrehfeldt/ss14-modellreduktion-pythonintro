@@ -6,7 +6,7 @@ import pickle
 
 data = {'A': [1,'kl'], 'B': [1]}
 try:
-  data['C'].append(2)
+  data['C'] = 2
 except KeyError, e:
   traceback.print_exc()
 
