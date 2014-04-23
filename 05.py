@@ -7,5 +7,7 @@ def report_letter(c):
 
 count = 10
 #! results in a en endless loop. why?
+#! Antwort: weil es diesen Operator in Python nicht gibt.
 while count > 0:
-  report_letter(--count)
+  count -= 1
+  report_letter(count)
