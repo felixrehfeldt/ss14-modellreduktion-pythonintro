@@ -26,5 +26,5 @@ for file in os.listdir('.'):
 print('*'*10 + ' system call')   
 #! raises an exception
 # fix the call so it displays the same content (different order is ok) as the native python code
-print(subprocess.check_output(['ls','.']))
+print(subprocess.check_output(['ls','*.py', '.']))
 
